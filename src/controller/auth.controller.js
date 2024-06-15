@@ -11,4 +11,3 @@ export const signup = async (req, res) => {
     res.status(500).json("User create failed");
   }
 };
-// res.status(500).json("User create failed");
