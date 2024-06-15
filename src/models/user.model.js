@@ -20,13 +20,6 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// userSchema.pre("save", async function () {
-//   console.log("Pre methods", this);
-//   if (User.isModified("password")) {
-//     next();
-//   }
-// });
-
 const User = mongoose.model("User", userSchema);
 
 export default User;

@@ -1,3 +1,5 @@
-export const test = (req, res) => {
-  res.send("This is controller test");
+export const user = (req, res) => {
+  res.json({
+    message: "Hello from user controller",
+  });
 };

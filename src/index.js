@@ -1,7 +1,7 @@
-import { app } from "./app.js"; // Import the app from the app.js file
-import connectDB from "./db/connection.db.js"; // Import the connectDB function from the connection.db.js file
-import dotenv from "dotenv"; // Import the dotenv library
-dotenv.config({ path: ".env" }); // Configure the dotenv library to read from the .env file
+import { app } from "./app.js";
+import connectDB from "./db/connection.db.js";
+import dotenv from "dotenv";
+dotenv.config({ path: ".env" });
 
 // This function connects to the database
 connectDB()
