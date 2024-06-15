@@ -4,8 +4,10 @@ import dotenv from "dotenv";
 dotenv.config({ path: ".env" });
 
 // This function connects to the database
-connectDB();
-
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`server is running on port ${process.env.PORT || 3000}`);
-});
+connectDB()
+  .than(
+    app.listen(process.env.PORT || 3000, () => {
+      console.log(`server is running on port ${process.env.PORT || 3000}`);
+    })
+  )
+  .catch();
